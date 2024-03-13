@@ -1,0 +1,87 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.game {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-box {
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  border: 1px solid black;
+  z-index: 1;
+  background-color: rgb(33, 31, 31);
+}
+.game-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tablero {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgb(33, 31, 31);
+  color: white;
+}
+
+.code {
+  flex: 3;
+  border: 1px solid black;
+  background-color: rgb(33, 31, 31);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.code > .lesson-code *{
+  color:white
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgb(33, 31, 31);
+  color: white;
+}
+
+.rojo {
+  color: red;
+}
+.naranja {
+  color: orange;
+}
+.amarillo {
+  color: yellow;
+}
+.verde {
+  color: green;
+}
+.azul {
+  color: blue;
+}
+.violeta {
+  color: purple;
+}
+.violeta-obscuro {
+  color: #4b0082;
+}

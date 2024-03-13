@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boceto de interfaz</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Bootstrapp -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<main class="container-main">
+
+    <section class="game">
+        <div class="game-box">
+            <img src="img/map.jpg" alt="Mapa del juego" id="map" draggable="false">
+        </div>
+        <div class="tablero">
+            <h2 id="instructions">Encuentra el tesoro</h2>
+            <p id="distance"></p>
+            <p id="attempts"></p>
+        </div>
+    </section>
+
+    <aside class="code">
+        <div class="lesson-code">
+            <pre>
+                <code>
+while (<input type="text" name="one" value="">) {
+    // Hacer algo
+}
+                </code>
+            </pre>
+        </div>
+    </aside>
+
+</main>
+
+<script src="js/helper.js" charset="utf-8"></script>
+<script src="js/game.js" charset="utf-8"></script>
+
+</body>
+</html>
