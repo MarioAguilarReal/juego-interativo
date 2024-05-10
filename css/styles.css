@@ -1,7 +1,19 @@
+@font-face {
+  font-family: "Vermin Vibes 1989 Regular";
+  src: url("https://db.onlinewebfonts.com/t/e9a92ef234e726ff17913d77b956d3e0.eot");
+  src: url("https://db.onlinewebfonts.com/t/e9a92ef234e726ff17913d77b956d3e0.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/e9a92ef234e726ff17913d77b956d3e0.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/e9a92ef234e726ff17913d77b956d3e0.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/e9a92ef234e726ff17913d77b956d3e0.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/e9a92ef234e726ff17913d77b956d3e0.svg#Vermin Vibes 1989 Regular")format("svg");
+}
+
+
 body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Vermin Vibes 1989 Regular" !important;
 }
 
 .container-main {
@@ -13,7 +25,7 @@ body, html {
 }
 
 .game {
-  flex: 7;
+  flex: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +34,7 @@ body, html {
 
 .game-box {
   width: 100%;
-  height: 80%;
+  height: 75%;
   text-align: center;
   border: 1px solid black;
   z-index: 1;
@@ -38,22 +50,112 @@ body, html {
   width: 100%;
   height: 20%;
   text-align: center;
-  border: 1px solid black;
-  background-color: rgb(33, 31, 31);
+  background-color: #e2beff;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.tablero > .information{
+  flex:2;
+  height: 100%;
+  background-image: url("../assets/img/letrero-intentos-y-encuentra-el-tesoro.png");
+  background-size: 70% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablero > .information > p{
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: normal;
+}
+
+.tablero > .status{
+  flex:1;
+  max-width: 400px;
+  height: 100%;
+  background-image: url("../assets/img/Michi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.tablero > .status > img{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left:65%;
+  bottom:30%;
+  z-index: 10;
+}
+
+.tablero > .status > .noti{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left:65%;
+  bottom:29%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 1.4rem;
+}
+
+
+.tablero > .tolerance{
+  flex:2;
+  height: 100%;
+  background-image: url("../assets/img/letrero-tolerancia.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff
+}
+
+.tablero > .tolerance > p{
+  max-width: 250px;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: normal;
+  margin-top: 25px;
+
+}
+
+.tablero > .tolerance > .tolerance-rate{
+  margin-top: 9px;
+  font-size: 2rem;
+  font-weight: bold;
+  color:#000
 }
 
 .code {
   flex: 3;
-  border: 1px solid black;
-  background-color: rgb(33, 31, 31);
+  background-color: #e2beff;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 .code > .lesson-code *{
-  color:white
+  color:rgb(0, 0, 0)
 }
 
 footer {
@@ -84,4 +186,5 @@ footer {
 }
 .violeta-obscuro {
   color: #4b0082;
+  line-height: 0%;
 }

@@ -22,6 +22,6 @@ let getDistanceHint = distance => {
   } else if (distance < 120) {
     return {text: "Congelado!", color: "violeta"};
   } else {
-    return {text: "Hielo Seco!", color: "violeta-obscuro"};
+    return {text: "Extremo!", color: "violeta-obscuro"};
   }
 }
