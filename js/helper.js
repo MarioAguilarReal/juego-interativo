@@ -8,18 +8,18 @@ let getDistance = (e, target) => {
   return Math.sqrt(diffX * diffX + diffY * diffY);
 };
 
-let getDistanceHint = distance => {
-  if (distance < 30) {
+let getDistanceHint = (distance, tolerance) => {
+  if (distance < tolerance) {
     return {text: "Hirviendo!", color: "rojo"};
-  } else if (distance < 40) {
+  } else if (distance < tolerance + 10) {
     return {text: "Caliente", color: "naranja"};
-  } else if (distance < 60) {
+  } else if (distance < tolerance + 30) {
     return {text: "Tibio", color: "amarillo"};
-  } else if (distance < 80) {
+  } else if (distance < tolerance + 50) {
     return {text: "Frio", color: "verde"};
-  } else if (distance < 100) {
+  } else if (distance < tolerance + 70) {
     return {text: "Muy frio", color: "azul"};
-  } else if (distance < 120) {
+  } else if (distance < tolerance + 900) {
     return {text: "Congelado!", color: "violeta"};
   } else {
     return {text: "Extremo!", color: "violeta-obscuro"};

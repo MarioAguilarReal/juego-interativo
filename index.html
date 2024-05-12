@@ -39,12 +39,36 @@
 
     <aside class="code">
         <div class="lesson-code">
+
+            <p>
+                Las condicionales en JavaScript son una forma de controlar el flujo de ejecución de tu programa. Permiten que tu código tome decisiones basadas en ciertas condiciones.
+            </p>
+
+            <p>
+                La estructura más básica de una condicional en JavaScript es la declaración if. Esta declaración toma una expresión booleana y ejecuta un bloque de código si esa expresión es verdadera.
+            </p>
+
+            <p>En el siguiente fragmento de código, modifica la condición en el bloque if para ajustar la dificultad del juego.</p>
+            <p>Entre mayor sea la tolerancia, más fácilmente encontrarás el tesoro.</p>
+
             <pre>
                 <code>
-Tolerancia del tesoro
-if (clickDistance < <input type="text" name="one" value="" id="toleranceInput">) {
-    // Hacer algo
-}
+mapElement.click(function(e) {
+    clicks++;
+    let distance = getDistance(e, target);
+    let distanceHint = getDistanceHint(distance);
+    console.log(distanceHint);
+
+    distanceElement.html(`&lt;p&gt;${distanceHint.text}&lt;/p&gt;`);
+    attempsElement.html(`&lt;p&gt;Intentos: ${clicks}&lt;/p&gt;`);
+    toleranceElement.html(`&lt;p&gt;${tolerance}&lt;/p&gt;`);
+    toleranceInput.val(tolerance);
+
+    if (distance < <input type="text" name="one" value="" id="toleranceInput">) {
+        alert(`Encontraste el tesoro en ${clicks} clicks!`);
+        location.reload();
+    }
+});
                 </code>
             </pre>
         </div>

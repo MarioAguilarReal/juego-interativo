@@ -15,11 +15,11 @@ let toleranceInput = $('#toleranceInput');
 let clicks = 0;
 let tolerance = 40;
 
-
+// Checa si la distancia al tesoro es menor a la tolerancia
 mapElement.click(function(e) {
   clicks++;
   let distance = getDistance(e, target);
-  let distanceHint = getDistanceHint(distance);
+  let distanceHint = getDistanceHint(distance, tolerance);
   console.log(distanceHint);
 
   distanceElement.html(`<p>${distanceHint.text}</p>`);

@@ -14,6 +14,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: "Vermin Vibes 1989 Regular" !important;
+  overflow: hidden;
 }
 
 .container-main {
@@ -146,6 +147,17 @@ body, html {
   color:#000
 }
 
+.lesson-code {
+  border: 1px solid white;
+  height: 100%;
+  padding: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.lesson-code pre {
+  margin: 0px;
+}
+
 .code {
   flex: 3;
   background-color: #e2beff;
@@ -153,9 +165,16 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 10px;
 }
+
 .code > .lesson-code *{
   color:rgb(0, 0, 0)
+}
+
+code {
+  margin: 10px;
+  padding: 10px;
 }
 
 footer {
